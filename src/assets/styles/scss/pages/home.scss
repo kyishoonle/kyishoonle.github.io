@@ -1,0 +1,355 @@
+.home-container {
+    // background-color: #f7f1e3;
+    background-color: #34ace0;
+    height: 100%;
+    width: 100%;
+    // color: #34ace0;
+    color: #f7f1e3;
+    text-align: center;
+}
+
+.home-wrap {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.home-name {
+    font-size: 4em;
+    text-transform: uppercase;
+    font-family: 'Janda';
+    letter-spacing: 0.1em;
+}
+
+%home-btn {
+    border: 3px solid #f7f1e3;
+    font-family: 'BalsamiqSans';
+    display: inline-block;
+    padding: 10px 15px;
+    width: 100%;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.5 ease;
+
+    &:hover {
+        background-color: #f7f1e3;
+        color: #34ace0;
+        transition: all 0.5 ease;
+    }
+}
+
+.home-port {
+    @extend %home-btn;
+}
+
+.home-comm {
+    @extend %home-btn;
+}
+
+.home-cont {
+    @extend %home-btn;
+}
+
+/*Lets start with the cloud formation rather*/
+
+/*The container will also serve as the SKY*/
+
+*{ margin: 0; padding: 0;}
+
+body {
+	overflow: hidden;
+}
+
+.cloud {
+	width: 200px; height: 60px;
+	background: #fff;
+	
+	border-radius: 200px;
+	-moz-border-radius: 200px;
+	-webkit-border-radius: 200px;
+	
+	position: relative; 
+}
+
+.cloud:before, .cloud:after {
+	content: '';
+	position: absolute; 
+	background: #fff;
+	width: 100px; height: 80px;
+	position: absolute; top: -15px; left: 10px;
+	
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	
+	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+}
+
+.cloud:after {
+	width: 120px; height: 120px;
+	top: -55px; left: auto; right: 15px;
+}
+
+.cloud.x6,
+// .cloud.x7,
+.cloud.x8,
+.cloud.x9,
+.cloud.x10 {
+	width: 100px; height: 30px;
+}
+
+.cloud.x6:before, .cloud.x6:after,
+// .cloud.x7:before, .cloud.x7:after,
+.cloud.x8:before, .cloud.x8:after,
+.cloud.x9:before, .cloud.x9:after,
+.cloud.x10:before, .cloud.x10:after {
+    width: 50px; height: 40px;
+	border-radius: 50px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+}
+
+.cloud.x6:after,
+// .cloud.x7:after,
+.cloud.x8:after,
+.cloud.x9:after,
+.cloud.x10:after {
+    width: 60px; height: 60px;
+    top: -30px;
+}
+
+.cloud.reverse {
+    -moz-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+
+.fadeLeft {
+    position: absolute;
+    top: 380px;
+    left: 10px;
+    -moz-transform: scale(0.6);
+    -o-transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6);
+    -webkit-animation: fadeL 5s linear infinite;
+	-moz-animation: fadeL 5s linear infinite;
+	-o-animation: fadeL 5s linear infinite;
+}
+
+.fadeRight {
+    position: absolute;
+    right: 10px;
+    top: 300px;
+    opacity: 0.5;
+    -moz-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+    -webkit-animation: fadeR 5s linear infinite;
+	-moz-animation: fadeR 5s linear infinite;
+	-o-animation: fadeR 5s linear infinite;
+}
+
+
+
+.x1 {
+	-webkit-animation: moveclouds 20s linear infinite;
+	-moz-animation: moveclouds 20s linear infinite;
+	-o-animation: moveclouds 20s linear infinite;
+}
+
+.x2 {
+	left: 200px;
+	
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+	opacity: 0.6; 
+	-webkit-animation: moveclouds 25s linear infinite;
+	-moz-animation: moveclouds 25s linear infinite;
+	-o-animation: moveclouds 25s linear infinite;
+}
+
+.x3 {
+	left: -250px; top: -200px;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 20s linear infinite;
+	-moz-animation: moveclouds 20s linear infinite;
+	-o-animation: moveclouds 20s linear infinite;
+}
+
+.x4 {
+	left: 470px; top: -250px;
+	
+	-webkit-transform: scale(0.75);
+	-moz-transform: scale(0.75);
+	transform: scale(0.75);
+	opacity: 0.75; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 25s linear infinite;
+	-moz-animation: moveclouds 25s linear infinite;
+	-o-animation: moveclouds 25s linear infinite;
+}
+
+.x5 {
+	left: -150px; top: -150px;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 20s linear infinite;
+	-moz-animation: moveclouds 20s linear infinite;
+	-o-animation: moveclouds 20s linear infinite;
+}
+
+
+.x6 {
+    bottom: -250px;
+
+	-webkit-animation: movecloudsbot 20s linear infinite;
+	-moz-animation: movecloudsbot 20s linear infinite;
+	-o-animation: movecloudsbot 20s linear infinite;
+}
+
+.x7 {
+    left: 200px;
+    bottom: -200px;
+	
+	-webkit-transform: scale(5);
+	-moz-transform: scale(5);
+	transform: scale(5);
+	opacity: 0.8; 
+	-webkit-animation: movecloudsbot 25s linear infinite;
+	-moz-animation: movecloudsbot 25s linear infinite;
+	-o-animation: movecloudsbot 25s linear infinite;
+}
+
+.x8 {
+	left: -250px; bottom: -250px;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8; /*opacity proportional to the size*/
+	
+	-webkit-animation: movecloudsbot 20s linear infinite;
+	-moz-animation: movecloudsbot 20s linear infinite;
+	-o-animation: movecloudsbot 20s linear infinite;
+}
+
+.x9 {
+	left: 470px; bottom: -250px;
+	
+	-webkit-transform: scale(0.75);
+	-moz-transform: scale(0.75);
+	transform: scale(0.75);
+	opacity: 0.75; /*opacity proportional to the size*/
+	
+	-webkit-animation: movecloudsbot 25s linear infinite;
+	-moz-animation: movecloudsbot 25s linear infinite;
+	-o-animation: movecloudsbot 25s linear infinite;
+}
+
+.x10 {
+	left: -150px; bottom: -50px;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8; /*opacity proportional to the size*/
+	-webkit-animation: movecloudsbot 20s linear infinite;
+	-moz-animation: movecloudsbot 20s linear infinite;
+	-o-animation: movecloudsbot 20s linear infinite;
+}
+
+@-webkit-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+@-moz-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+@-o-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+
+@-webkit-keyframes movecloudsbot {
+	0% {margin-left: 2000px;}
+	100% {margin-left: 0px;}
+}
+@-moz-keyframes movecloudsbot {
+	0% {margin-left: 2000px;}
+	100% {margin-left: 0px;}
+}
+@-o-keyframes movecloudsbot {
+	0% {margin-left: 2000px;}
+	100% {margin-left: 0px;}
+}
+
+@-webkit-keyframes fadeL {
+    0% {opacity: 1;}
+    50% {opacity: 0.5;}
+	100% {opacity: 1;}
+}
+@-moz-keyframes fadeL {
+    0% {opacity: 1;}
+    50% {opacity: 0.5;}
+	100% {opacity: 1;}
+}
+@-o-keyframes fadeL {
+    0% {opacity: 1;}
+    50% {opacity: 0.5;}
+	100% {opacity: 1;}
+}
+
+@-webkit-keyframes fadeR {
+    0% {opacity: 0.5;}
+    50% {opacity: 1;}
+	100% {opacity: 0.5;}
+}
+@-moz-keyframes fadeR {
+    0% {opacity: 0.5;}
+    50% {opacity: 1;}
+	100% {opacity: 0.5;}
+}
+@-o-keyframes fadeR {
+    0% {opacity: 0.5;}
+    50% {opacity: 1;}
+	100% {opacity: 0.5;}
+}
+
+.home-name {
+    position: relative;
+    font-weight: 200;
+    font-size: 4em;
+}
+
+.home-name .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+}
+
+.home-name .home-letter {
+    transform-origin: 50% 100%;
+    display: inline-block;
+    line-height: 1em;
+}

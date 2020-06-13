@@ -1,0 +1,29 @@
+.head-container {
+    min-height: 70px;
+    background-color: #34ace0;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.head-back {
+    color: #f7f1e3;
+    vertical-align: middle;
+    min-height: 70px;
+    width: 20px !important;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.head-title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 26px;
+    color: #f7f1e3;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'BalsamiqSans';
+}

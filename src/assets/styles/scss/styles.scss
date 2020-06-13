@@ -1,0 +1,12 @@
+
+@import './pages/home';
+@import './fonts';
+@import './components/header';
+
+html, body, #root, .route-wrapper, .route-wrapper > div {
+	height: 100%;
+}
+
+body {
+	// font-family: 'CorporateS';
+}
