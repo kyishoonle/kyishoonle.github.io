@@ -1,4 +1,67 @@
 .contact-container {
     height: 100%;
     background-color: #f7f1e3;
+    text-align: center;
+    position: relative;
+}
+
+.contact-wrap {
+    text-align: center;
+    margin: 0 auto;
+    display: inline-block;
+    max-width: 700px;
+    padding: 10px;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.contact-fb {
+    color: #4595FF;
+    font-size: 5em;
+    // border: 1px solid red;
+    cursor: pointer;
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite;
+    margin: 50px;
+}
+
+.contact-as {
+    color: #14AFF0;
+    font-size: 5em;
+    // border: 1px solid #14AFF0;
+    // padding: 5px;
+    cursor: pointer;
+    // border-radius: 50%;
+	animation: float 6s ease-in-out infinite;
+    animation-delay: -2s;
+    margin: 50px;
+}
+
+.contact-mail {
+    color: #D54B3D;
+    font-size: 5em;
+    // border: 1px solid #14AFF0;
+    // padding: 5px;
+    cursor: pointer;
+    // border-radius: 50%;
+	animation: float 6s ease-in-out infinite;
+    // animation-delay: -2s;
+    margin: 50px;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-50px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
 }

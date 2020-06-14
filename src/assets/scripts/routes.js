@@ -17,7 +17,7 @@ function bounce(val) {
 
 export default () => (
   <>
-    {/* <AnimatedSwitch
+    <AnimatedSwitch
        atEnter={{ offset: 3, opacity: 0 }}
         atLeave={{ offset: 3, opacity: 1 }}
         atActive={{ offset: 0, opacity: bounce(1) }}
@@ -26,11 +26,11 @@ export default () => (
         opacity: styles.opacity
         })}
         className="route-wrapper"
-    >  */}
+    > 
         <Route path="/" exact component={Home} />
         <Route path="/gallery" exact component={Portfolio} />
         <Route path="/commission" exact component={Commission} />
         <Route path="/contact" exact component={Contact} />
-    {/* </AnimatedSwitch> */}
+    </AnimatedSwitch>
     </>
 );

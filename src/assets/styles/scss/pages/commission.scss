@@ -1,0 +1,60 @@
+.comm-container {
+    height: 100%;
+    background-color: #f7f1e3;
+    text-align: center;
+    position: relative;
+    padding-top: 50px;
+}
+
+.comm-wrap {
+    max-width: 700px;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+.comm-top {
+    position: relative;
+}
+
+.comm-title {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 35px;
+}
+
+%comm-arrows {
+    position: absolute;
+    top: 3px;
+    width: 25px !important;
+    height: 25px !important;
+    cursor: pointer;
+}
+
+.comm-back {
+    @extend %comm-arrows;
+    left: 0;
+}
+
+.comm-next {
+    @extend %comm-arrows;
+    right: 0;
+}
+
+.comm-img-wrap {
+    height: 250px;
+
+}
+
+.comm-image {
+    max-width: 300px;
+    height: auto;
+    max-height: 250px;
+    width: auto;
+}
+
+.comm-details {
+    margin-top: 20px;
+    font-size: 18px;
+    letter-spacing: 5px;
+}

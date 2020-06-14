@@ -1,0 +1,28 @@
+.port-container {
+    height: 100%;
+    background-color: #f7f1e3;
+    text-align: center;
+    position: relative;
+    padding-top: 30px;
+    overflow-y: auto;
+}
+
+.port-wrap {
+    padding: 50px;
+    margin: 0 auto;
+}
+
+.port-image {
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.modal-img {
+    width: 100%;
+}
