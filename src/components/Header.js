@@ -15,7 +15,7 @@ class Header extends Component {
 
         if (path === "/contact") {
             this.setState({
-                title: 'Contact Me'
+                title: 'Contact'
             })
         }
         if (path === "/commission") {
