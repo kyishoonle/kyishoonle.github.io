@@ -18,6 +18,10 @@
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+
+    @media (max-width: 420px) {
+        height: 100%;
+    }
 }
 
 .contact-fb {
@@ -28,6 +32,13 @@
     border-radius: 50%;
     animation: float 6s ease-in-out infinite;
     margin: 50px;
+
+    @media (max-width: 420px) {
+        animation: floatM 6s ease-in-out infinite;
+        display: block;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
 }
 
 .contact-as {
@@ -40,18 +51,50 @@
 	animation: float 6s ease-in-out infinite;
     animation-delay: -2s;
     margin: 50px;
+
+    @media (max-width: 420px) {
+        animation: floatM 6s ease-in-out infinite;
+        animation-delay: -2s;
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
 }
 
 .contact-mail {
-    color: #D54B3D;
-    font-size: 5em;
-    // border: 1px solid #14AFF0;
-    // padding: 5px;
+    width: 100px;
     cursor: pointer;
-    // border-radius: 50%;
 	animation: float 6s ease-in-out infinite;
-    // animation-delay: -2s;
-    margin: 50px;
+    // margin: 50px;
+    margin-left: 20px;
+    margin-top: -140px;
+    display: inline-block;
+
+    @media (max-width: 420px) {
+        animation: floatM 6s ease-in-out infinite;
+        display: block;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+}
+
+.contact-ig {
+    width: 100px;
+    cursor: pointer;
+	animation: float 6s ease-in-out infinite;
+    // margin: 50px;
+    margin-left: 60px;
+    margin-top: -140px;
+    animation-delay: -2s;
+    display: inline-block;
+
+    @media (max-width: 420px) {
+        animation: floatM 6s ease-in-out infinite;
+        animation-delay: -2s;
+        display: block;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
 }
 
 @keyframes float {
@@ -63,5 +106,17 @@
 	}
 	100% {
 		transform: translatey(0px);
+	}
+}
+
+@keyframes floatM {
+	0% {
+		transform: translatex(0px);
+	}
+	50% {
+		transform: translatex(-50px);
+	}
+	100% {
+		transform: translatex(0px);
 	}
 }

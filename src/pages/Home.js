@@ -7,8 +7,8 @@ class Home extends Component {
     }
 
     componentDidMount() {
-        var textWrapper = document.querySelector('.home-letters');
-        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='home-letter'>$&</span>");
+        // var textWrapper = document.querySelector('.home-letters');
+        // textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='home-letter'>$&</span>");
 
         anime.timeline({loop: false})
         .add({
@@ -61,19 +61,21 @@ class Home extends Component {
                     <div className="home-name">
                         <div className="text-wrapper">
                             <div className="home-letters">
-                                Kyi Shoon Le
+                                <span className="home-letter">K</span><span className="home-letter">y</span><span className="home-letter">i</span> <br className="home-break"/>
+                                <span className="home-letter">S</span><span className="home-letter">h</span><span className="home-letter">o</span><span className="home-letter">o</span><span className="home-letter">n</span> <br className="home-break" />
+                                <span className="home-letter">L</span><span className="home-letter">e</span>
                             </div>
                         </div>
                     </div> 
 
                     <div className="row">
-                        <div className="col-sm-4">
+                        <div className="col-lg-4">
                             <div className="home-port" onClick={() => this.onNavigate('/gallery')}>Gallery</div>
                         </div>
-                        <div className="col-sm-4">
+                        <div className="col-lg-4">
                             <div className="home-comm" onClick={() => this.onNavigate('/commission')}>Commission</div>
                         </div>
-                        <div className="col-sm-4">
+                        <div className="col-lg-4">
                             <div className="home-cont" onClick={() => this.onNavigate('/contact')}>Contact Me</div>
                         </div>
                     </div>
